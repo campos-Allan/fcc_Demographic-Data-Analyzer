@@ -5,7 +5,15 @@ on FreeCodeCamp.org
 import pandas as pd
 
 
-def calculate_demographic_data(print_data=True):
+def calculate_demographic_data(print_data: bool = True):
+    """analyze data and answering questions
+
+    Args:
+        print_data (bool, optional): to print results. Defaults to True.
+
+    Returns:
+        _type_: result
+    """
     # Read data from file
     df_dem = pd.DataFrame(pd.read_csv('adult.data.csv'))
 
